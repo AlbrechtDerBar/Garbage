@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="field">
+      <h3>Current Player: <h3 id="player">Player 1</h3></h3>
+      <div id="player1" class="field">
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s1" onclick="turn(this)">1</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s2" onclick="turn(this)">2</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s3" onclick="turn(this)">3</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s4" onclick="turn(this)">4</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s5" onclick="turn(this)">5</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s6" onclick="turn(this)">6</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s7" onclick="turn(this)">7</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s8" onclick="turn(this)">8</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s9" onclick="turn(this)">9</button></div>
+        <div class="card  player1"><h class="pSlot1">?</h><br><button class="p1 s10" onclick="turn(this)">10</button></div>
+      </div>
+      <div id="player2" class="field">
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s1" onclick="turn(this)">1</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s2" onclick="turn(this)">2</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s3" onclick="turn(this)">3</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s4" onclick="turn(this)">4</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s5" onclick="turn(this)">5</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s6" onclick="turn(this)">6</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s7" onclick="turn(this)">7</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s8" onclick="turn(this)">8</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s9" onclick="turn(this)">9</button></div>
+        <div class="card player2"><h class="pSlot2">?</h><br><button class="p2 s10" onclick="turn(this)">10</button></div>
+      </div>
+      <div class="field">
+        <div><button id="draw" onclick="draw()">Draw</button></div>
+        <div><h id="hand">Hand</h></div>
+        <div><button id="discard" onclick="takeDiscard()">Take Discard</button></div>
+        <div><h id="discPile">Discard</h></div>
+        <div><button id="next" onclick="endTurn()">End Turn</button></div>
+        <div><button onclick="window.location.reload()" class="hidden" id="restart">Restart</button></div>
+      </div>
+    </div>
+  </body>
+</html>
